@@ -15,16 +15,16 @@ export default defineConfig({
     viteReact(),
   ],
   // Uncommenting this fixes the issue
-  // resolve: {
-  //   alias: [
-  //     {
-  //       find: "use-sync-external-store/shim/index.js",
-  //       replacement: "react",
-  //     },
-  //     {
-  //       find: "cookie",
-  //       replacement: "cookie-es",
-  //     },
-  //   ]
-  // }
+  resolve: {
+    alias: [
+      {
+        find: "use-sync-external-store/shim/index.js",
+        replacement: "react",
+      },
+      {
+        find: "cookie",
+        replacement: "cookie-es",
+      },
+    ]
+  }
 })
